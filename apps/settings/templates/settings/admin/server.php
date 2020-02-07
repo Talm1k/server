@@ -45,7 +45,7 @@
 					if ($_['backgroundjobs_mode'] === 'cron') { ?>
 						<span class="status warning"></span>
 						<span class="crondate" title="<?php p($maxAgeAbsoluteTime);?>">
-							<?php p($l->t("Some jobs didn’t execute since %s. Please consider increasing the execution frequency.", [$maxAgeRelativeTime]));?>
+							<?php p($l->t("Some jobs haven’t been executed since %s. Please consider increasing the execution frequency.", [$maxAgeRelativeTime]));?>
 						</span>
 					<?php } else { ?>
 						<span class="status error"></span>
